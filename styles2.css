@@ -1,0 +1,142 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #FF9471;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #FF9471;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #FF9471;
+    color: white;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.tab:not(:last-child) {
+    border-right: 1px solid #f9f9f9;
+}
+
+.tab.active {
+    background-color: #ffffff;
+    color: #FF9471;
+    border-bottom: 2px solid #FF9471;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus, select:focus {
+    border-color: #FF9471;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #FF9471;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #ff704d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#health-analysis, #meal-plan, #workout-plan {
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+h2 {
+    color: #FF9471;
+    border-bottom: 2px solid #FF9471;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #FF9471;
+    margin-top: 20px;
+    font-weight: 500;
+}

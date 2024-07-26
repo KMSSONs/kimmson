@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness Application</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health and Fitness Application</h1>
+        <div class="tabs">
+           
+            <button class="tab active" onclick="showTab('overall-health-tab')">Overall Health Analysis</button>
+            <button class="tab" onclick="showTab('meal-plan-tab')">Meal Plan</button>
+            <button class="tab" onclick="showTab('workout-plan-tab')">Workout Plan</button>
+            <button class="tab" onclick="redirectToHome()">Home</button>
+        </div>
+
+        <div id="overall-health-tab" class="tab-content active">
+            <h2>Overall Health Analysis</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight">
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height">
+            </div>
+            <div class="form-group">
+                <label for="health">Health Condition:</label>
+                <input type="text" id="health">
+            </div>
+            <div class="form-group">
+                <label for="desired-weight">Desired Weight (kg):</label>
+                <input type="number" id="desired-weight">
+            </div>
+            <div class="form-group">
+                <label for="exercise">Exercise Level:</label>
+                <select id="exercise">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button onclick="generateHealthAnalysis()">Analyze</button>
+            <div id="health-analysis"></div>
+        </div>
+
+        <div id="meal-plan-tab" class="tab-content">
+            <h2>Meal Plan</h2>
+            <div class="form-group">
+                <label for="meal-name">Name:</label>
+                <input type="text" id="meal-name">
+            </div>
+            <div class="form-group">
+                <label for="meal-age">Age:</label>
+                <input type="number" id="meal-age">
+            </div>
+            <div class="form-group">
+                <label for="meal-gender">Gender:</label>
+                <select id="meal-gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="meal-weight">Weight (kg):</label>
+                <input type="number" id="meal-weight">
+            </div>
+            <div class="form-group">
+                <label for="meal-height">Height (cm):</label>
+                <input type="number" id="meal-height">
+            </div>
+            <div class="form-group">
+                <label for="meal-health">Health Condition:</label>
+                <input type="text" id="meal-health">
+            </div>
+            <div class="form-group">
+                <label for="meal-desired-weight">Desired Weight (kg):</label>
+                <input type="number" id="meal-desired-weight">
+            </div>
+            <div class="form-group">
+                <label for="meal-exercise">Exercise Level:</label>
+                <select id="meal-exercise">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <button onclick="generateMealPlan()">Generate Meal Plan</button>
+            <div id="meal-plan"></div>
+        </div>
+
+        <div id="workout-plan-tab" class="tab-content">
+            <h2>Workout Plan</h2>
+            <div class="form-group">
+                <label for="workout-name">Name:</label>
+                <input type="text" id="workout-name">
+            </div>
+            <div class="form-group">
+                <label for="workout-age">Age:</label>
+                <input type="number" id="workout-age">
+            </div>
+            <div class="form-group">
+                <label for="workout-gender">Gender:</label>
+                <select id="workout-gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="workout-weight">Weight (kg):</label>
+                <input type="number" id="workout-weight">
+            </div>
+            <div class="form-group">
+                <label for="workout-height">Height (cm):</label>
+                <input type="number" id="workout-height">
+            </div>
+            <div class="form-group">
+                <label for="workout-goal">Workout Goal:</label>
+                <select id="workout-goal">
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="vertical-jump">Vertical Jump</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="meditation">Meditation</option>
+                </select>
+            </div>
+            <button onclick="generateWorkoutPlan()">Generate Workout Plan</button>
+            <div id="workout-plan"></div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
